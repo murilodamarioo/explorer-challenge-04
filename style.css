@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #E5E5E5;
+    --txt-color: #323238;
+    --txt-color-secondary: #FFFFFF;
+    --sounds-bg-color-primary: #c0c0c7;
+    --sounds-bg-color-secondary: #02799D;
+
+    font-size: clamp(40%, 1% + 2vw, 62.5%);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+
+    display: grid;
+    height: 100vh;
+    place-content: center;
+}
+
+#app {
+    display: grid;
+    justify-items: center;
+    gap: 19.2rem;
+}
+
+.flex {
+    display: flex;
+}
+
+#timer {
+    font-size: 12.6rem;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+#controls {
+    margin-top: 4.8rem;
+    gap: 4rem;
+}
+
+#controls button {
+    background-color: transparent;
+    border: 0;
+    color: var(--primary-color);
+
+    cursor: pointer;
+
+    font-size: 6.4rem;
+}
+
+#controls button:hover:first-child {
+    color: #25c210;
+}
+
+#controls button:hover:nth-child(2){
+    color: rgb(190, 32, 32);
+}
+
+#controls button:hover:nth-child(3) {
+    color: #14caca;
+}
+
+#controls button:hover:nth-child(4) {
+    color: rgb(236, 163, 5);
+}
+
+#theme-sound {
+    gap: 3.2rem
+}
+
+#theme-sound button {
+    color: var(--primary-color);
+    background-color: var(--sounds-bg-color-primary);
+    font-size: 6.4rem;
+    width: 14rem;
+    height: 15rem;
+    border-radius: 2.4rem;
+    border: none;
+    cursor: pointer;
+}
+
+#theme-sound button:hover {
+    background-color: var(--sounds-bg-color-secondary);
+    color: var(--txt-color-secondary);
+}
+
+
+
+
+
